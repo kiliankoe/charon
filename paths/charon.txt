@@ -1,0 +1,48 @@
+# Charon 0 (NeoQwertz with y and z swapped) to Bone in five stages.
+#
+# Every stage moves a closed set of keys straight to their Bone positions, one
+# cycle or half-cycle at a time: the 7-cycle first, then the 10-cycle split in
+# two with ö parked for one stage, then the 14-cycle split in two with q parked.
+# The three-stage route is Charon 1, Charon 3, Bone: the parked letters make
+# the split stages nest, so no separate layouts are needed for it.
+#
+# The first block is the starting point and is not generated; a block equal to
+# the target (Bone here) is not generated either, it closes the path.
+
+layout: Charon 0
+1 2 3 4 5 6 7 8 9 0 ß
+q w e r t y u i o p ü
+a s d f g h j k l ö ä
+z x c v b n m , . -
+
+layout: Charon 1
+1 2 3 4 5 6 7 8 9 0 -
+q w e a t y u i o p ß
+c s d f g h j r l ö ä
+z x ü v b n m , . k
+
+layout: Charon 2
+parked: ö
+1 2 3 4 5 6 7 8 9 0 -
+q w ö a t y u i m p ß
+c s d e o h j r l g ä
+f x ü v b n z , . k
+
+layout: Charon 3
+1 2 3 4 5 6 7 8 9 0 -
+q w u a t y h i m p ß
+c s d e o b j r l g ä
+f x ü v ö n z , . k
+
+layout: Charon 4
+parked: q
+1 2 3 4 5 6 7 8 9 0 -
+j d u a t p h i m w ß
+c s q e o b n r l g ä
+f x ü v ö y z , . k
+
+layout: Bone
+1 2 3 4 5 6 7 8 9 0 -
+j d u a x p h l m w ß
+c t i e o b n r s g q
+f v ü ä ö y z , . k

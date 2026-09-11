@@ -1,0 +1,7 @@
+line-length = 110
+target-version = "py39"
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+# The whole project is about characters that look like other characters.
+ignore = ["RUF001", "RUF003"]
